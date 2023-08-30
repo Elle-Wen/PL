@@ -1,0 +1,1 @@
+let abs_sq x = let a1 = x * x in a1
