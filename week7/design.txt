@@ -1,0 +1,31 @@
+current < count    
+----------------------------------------------------
+for (current, count), s -> for (current+1, count), s
+
+current = count 
+-----------------------------
+for (current, count), s -> s 
+
+I want to add for loop in OCaml. Becuase when I coded in Ocaml, there were many times when I wanted to 
+repetitivaly evaluate an expression with updating values for a certain times, and return the expression 
+evaluated at the last time 
+
+Note that within s there should be "let ... = current in ..." to make sure "current" is used in s. 
+If current is not used in s, the loop just evaluates the same expression for many times. 
+
+In order to make the syntax feel coherent with the rest of OCaml. I will first specify the precednece and
+then the associtivity. 
+
+It should be having one lower precedence than let expression and  be right associative. Eg. for (1,2): (for (2,3),s)
+<for> = | <next_level_expression>
+        | for (curr,cnt), <for>
+
+In order to implement it, I think one way is to define a new recursive function for that feature. The for_loop function
+takes three arguments: curr, cnt, s and recursily caling itself with curr = curr + 1. The base case is when curr = cnt 
+where it just return s. 
+
+The other way is through modifing the parser and interpreter (since we are adding new syntax and new 
+inference rules). This way is more coherent with the rest of the OCaml. The way we modify the parser is 
+just to add a new match case inside the function that handle the same precedence as <for>. For the interpreter,
+we add new functions for the two inferences rules. Note that inside s, I need to substitue all occurance 
+of curr to curr + 1. It shouldn't be that difficult. 

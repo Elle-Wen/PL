@@ -1,0 +1,16 @@
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:0:test suite for lexer:1:numbers in id.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Test test_suite for lambda calculus:0:test suite for lexer:1:numbers in id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:0:test suite for lexer:1:numbers in id.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument is successful.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing.
+2023-10-05T21:54:54+00:00 Yuheng#02 E: Test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing has failed.
+2023-10-05T21:54:54+00:00 Yuheng#02 E: expected: &x. (x) but got: y in test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing.
+2023-10-05T21:54:54+00:00 Yuheng#02 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2023-10-05T21:54:54+00:00 Yuheng#02 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-10-05T21:54:54+00:00 Yuheng#02 E: 
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing.

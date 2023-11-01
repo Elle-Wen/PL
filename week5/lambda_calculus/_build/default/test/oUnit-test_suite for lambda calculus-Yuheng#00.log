@@ -1,0 +1,177 @@
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Runner: processes
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Chooser: simple
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration suite_name = "test_suite for lambda calculus"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration cache_filename = "/home/yuheng/PL/week5/lambda_calculus/_build/default/test/oUnit-$(suite_name).cache"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration run_gc_full_major = "true"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration display = "true"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration results_style_1_X = "false"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration testdata_dir = "none"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration health_check_interval = "1."
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration verbose = "false"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration chooser = "simple"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration output_html_dir = "none"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration processes_kill_period = "5."
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration runner = "processes"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration shards = "6"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration processes_grace_period = "5."
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration log_encoding = "utf-8"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration output_junit_file = "none"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration ci = "false"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Configuration output_file = "/home/yuheng/PL/week5/lambda_calculus/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Using 6 workers maximum.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Starting worker number Yuheng#01.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#01 started.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Starting worker number Yuheng#02.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#02 started.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Starting worker number Yuheng#03.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#03 started.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Starting worker number Yuheng#04.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#04 started.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Starting worker number Yuheng#05.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#05 started.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Starting worker number Yuheng#06.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#06 started.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable, test_suite for lambda calculus:0:test suite for lexer:1:numbers in id, test_suite for lambda calculus:0:test suite for lexer:0:all tokens.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: Start test test_suite for lambda calculus:0:test suite for lexer:0:all tokens.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:0:test suite for lexer:1:numbers in id.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable, test_suite for lambda calculus:0:test suite for lexer:1:numbers in id, test_suite for lambda calculus:0:test suite for lexer:0:all tokens.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: Test test_suite for lambda calculus:0:test suite for lexer:0:all tokens is successful.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Test test_suite for lambda calculus:0:test suite for lexer:1:numbers in id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable, test_suite for lambda calculus:0:test suite for lexer:1:numbers in id, test_suite for lambda calculus:0:test suite for lexer:0:all tokens.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: End test test_suite for lambda calculus:0:test suite for lexer:0:all tokens.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:0:test suite for lexer:1:numbers in id.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable, test_suite for lambda calculus:0:test suite for lexer:1:numbers in id, test_suite for lambda calculus:0:test suite for lexer:0:all tokens.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#06 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument is successful.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable is successful.
+2023-10-05T21:54:54+00:00 Yuheng#04 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:2:test suite for parser:1:application, test_suite for lambda calculus:2:test suite for parser:0:id, test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Start test test_suite for lambda calculus:2:test suite for parser:0:id.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:2:test suite for parser:1:application, test_suite for lambda calculus:2:test suite for parser:0:id, test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda.
+2023-10-05T21:54:54+00:00 Yuheng#04 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda is successful.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Test test_suite for lambda calculus:2:test suite for parser:0:id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:2:test suite for parser:1:application, test_suite for lambda calculus:2:test suite for parser:0:id, test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda.
+2023-10-05T21:54:54+00:00 Yuheng#04 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: End test test_suite for lambda calculus:2:test suite for parser:0:id.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:2:test suite for parser:1:application, test_suite for lambda calculus:2:test suite for parser:0:id, test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda.
+2023-10-05T21:54:54+00:00 Yuheng#06 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application is successful.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Start test test_suite for lambda calculus:2:test suite for parser:1:application.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:2:test suite for parser:1:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application.
+2023-10-05T21:54:54+00:00 Yuheng#06 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Test test_suite for lambda calculus:2:test suite for parser:1:application is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:2:test suite for parser:1:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: End test test_suite for lambda calculus:2:test suite for parser:1:application.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:2:test suite for parser:1:application, test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 6 tests running : test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Start test test_suite for lambda calculus:3:test suite for the reduction engine:0:id.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: Start test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 6 tests running : test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda is successful.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Start test test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Test test_suite for lambda calculus:3:test suite for the reduction engine:0:id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#02 E: Test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing has failed.
+2023-10-05T21:54:54+00:00 Yuheng#02 E: expected: &x. (x) but got: y in test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing.
+2023-10-05T21:54:54+00:00 Yuheng#02 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2023-10-05T21:54:54+00:00 Yuheng#02 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-10-05T21:54:54+00:00 Yuheng#02 E: 
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 6 tests running : test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Test test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda is successful.
+2023-10-05T21:54:54+00:00 Yuheng#04 I: Start test test_suite for lambda calculus:2:test suite for parser:3:naming.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: End test test_suite for lambda calculus:3:test suite for the reduction engine:0:id.
+2023-10-05T21:54:54+00:00 Yuheng#02 I: End test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 6 tests running : test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 6 tests running: test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing, test_suite for lambda calculus:3:test suite for the reduction engine:0:id, test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: End test test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda.
+2023-10-05T21:54:54+00:00 Yuheng#04 I: Test test_suite for lambda calculus:2:test suite for parser:3:naming is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 4 tests running : test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 4 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#04 I: End test test_suite for lambda calculus:2:test suite for parser:3:naming.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 3 tests running : test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 3 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:2:test suite for parser:3:naming, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 2 tests running : test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 2 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#01 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 2 tests running : test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 2 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals, test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda.
+2023-10-05T21:54:54+00:00 Yuheng#06 I: Start test test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 1 tests running : test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 1 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#06 I: Test test_suite for lambda calculus:2:test suite for parser:4:naming church numerals is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 1 tests running : test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 1 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#06 I: End test test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Still 1 tests running : test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 1 tests running: test_suite for lambda calculus:2:test suite for parser:4:naming church numerals.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: 0 tests running: .
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#03 has ended.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#02 has ended.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#04 has ended.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#06 has ended.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#01 died unexpectedly.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Worker Yuheng#05 died unexpectedly.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Used 6 worker during test execution.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Run 2 tests with shard Yuheng#04.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Run 2 tests with shard Yuheng#06.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Run 3 tests with shard Yuheng#03.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Run 3 tests with shard Yuheng#01.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Run 4 tests with shard Yuheng#02.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Run 3 tests with shard Yuheng#05.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Check health of shard Yuheng#04, 6 times.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Check health of shard Yuheng#06, 1 times.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Check health of shard Yuheng#03, 8 times.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Check health of shard Yuheng#02, 8 times.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Check health of shard Yuheng#01, 5 times.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Check health of shard Yuheng#05, 8 times.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: ==============
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Summary:
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:2:test suite for parser:4:naming church numerals is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:6:nested lambda is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:2:test suite for parser:3:naming is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 E: Test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing has failed.
+2023-10-05T21:54:54+00:00 Yuheng#00 E: expected: &x. (x) but got: y in test test_suite for lambda calculus:3:test suite for the reduction engine:1:shadowing.
+2023-10-05T21:54:54+00:00 Yuheng#00 E: Raised at OUnitAssert.assert_failure in file "src/lib/ounit2/advanced/oUnitAssert.ml", line 45, characters 2-27
+2023-10-05T21:54:54+00:00 Yuheng#00 E: Called from OUnitRunner.run_one_test.(fun) in file "src/lib/ounit2/advanced/oUnitRunner.ml", line 83, characters 13-26
+2023-10-05T21:54:54+00:00 Yuheng#00 E: 
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:3:test suite for the reduction engine:0:id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:2:test suite for parser:1:application is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:7:nested lambda unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:3:application is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:2:test suite for parser:0:id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:1:lambda is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:5:application right argument unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:4:application right argument is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:0:test suite for lexer:1:numbers in id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Test test_suite for lambda calculus:0:test suite for lexer:0:all tokens is successful.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Ran: 17 tests in: 0.14 seconds.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Cases: 17.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Tried: 17.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Errors: 0.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Failures: 1.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Skip: 0.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Todo: 0.
+2023-10-05T21:54:54+00:00 Yuheng#00 I: Timeout: 0.

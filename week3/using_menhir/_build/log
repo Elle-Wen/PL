@@ -1,0 +1,6 @@
+# dune init proj using_menhir --kind l
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root:
+# /home/yuheng/ProgrammingLanguage_and_Design/week3/using_menhir
+# Auto-detected concurrency: 12

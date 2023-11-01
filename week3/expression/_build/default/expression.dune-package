@@ -1,0 +1,59 @@
+(lang dune 3.10)
+(name expression)
+(sections (lib .) (libexec .))
+(files
+ (lib
+  (META
+   dune-package
+   expression.a
+   expression.cma
+   expression.cmi
+   expression.cmt
+   expression.cmx
+   expression.cmxa
+   expression.ml
+   expression__Interpreter.cmi
+   expression__Interpreter.cmt
+   expression__Interpreter.cmx
+   expression__Lexer.cmi
+   expression__Lexer.cmt
+   expression__Lexer.cmx
+   expression__Parser.cmi
+   expression__Parser.cmt
+   expression__Parser.cmx
+   interpreter.ml
+   lexer.ml
+   opam
+   parser.ml))
+ (libexec (expression.cmxs)))
+(library
+ (name expression)
+ (kind normal)
+ (archives (byte expression.cma) (native expression.cmxa))
+ (plugins (byte expression.cma) (native expression.cmxs))
+ (native_archives expression.a)
+ (main_module_name Expression)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name expression)
+     (visibility public)
+     (kind alias)
+     (source (path Expression) (impl (path expression.ml-gen))))
+    (name Expression)
+    (modules
+     (module
+      (obj_name expression__Interpreter)
+      (visibility public)
+      (source (path Interpreter) (impl (path interpreter.ml))))
+     (module
+      (obj_name expression__Lexer)
+      (visibility public)
+      (source (path Lexer) (impl (path lexer.ml))))
+     (module
+      (obj_name expression__Parser)
+      (visibility public)
+      (source (path Parser) (impl (path parser.ml))))))
+   (wrapped true))))

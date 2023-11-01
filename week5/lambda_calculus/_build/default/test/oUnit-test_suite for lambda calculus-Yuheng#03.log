@@ -1,0 +1,9 @@
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable is successful.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:0:variable.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Start test test_suite for lambda calculus:2:test suite for parser:1:application.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Test test_suite for lambda calculus:2:test suite for parser:1:application is successful.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: End test test_suite for lambda calculus:2:test suite for parser:1:application.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Start test test_suite for lambda calculus:3:test suite for the reduction engine:0:id.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: Test test_suite for lambda calculus:3:test suite for the reduction engine:0:id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#03 I: End test test_suite for lambda calculus:3:test suite for the reduction engine:0:id.

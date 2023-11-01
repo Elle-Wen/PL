@@ -1,0 +1,27 @@
+lib: [
+  "_build/install/default/lib/expression/META"
+  "_build/install/default/lib/expression/dune-package"
+  "_build/install/default/lib/expression/expression.a"
+  "_build/install/default/lib/expression/expression.cma"
+  "_build/install/default/lib/expression/expression.cmi"
+  "_build/install/default/lib/expression/expression.cmt"
+  "_build/install/default/lib/expression/expression.cmx"
+  "_build/install/default/lib/expression/expression.cmxa"
+  "_build/install/default/lib/expression/expression.ml"
+  "_build/install/default/lib/expression/expression__Interpreter.cmi"
+  "_build/install/default/lib/expression/expression__Interpreter.cmt"
+  "_build/install/default/lib/expression/expression__Interpreter.cmx"
+  "_build/install/default/lib/expression/expression__Lexer.cmi"
+  "_build/install/default/lib/expression/expression__Lexer.cmt"
+  "_build/install/default/lib/expression/expression__Lexer.cmx"
+  "_build/install/default/lib/expression/expression__Parser.cmi"
+  "_build/install/default/lib/expression/expression__Parser.cmt"
+  "_build/install/default/lib/expression/expression__Parser.cmx"
+  "_build/install/default/lib/expression/interpreter.ml"
+  "_build/install/default/lib/expression/lexer.ml"
+  "_build/install/default/lib/expression/opam"
+  "_build/install/default/lib/expression/parser.ml"
+]
+libexec: [
+  "_build/install/default/lib/expression/expression.cmxs"
+]

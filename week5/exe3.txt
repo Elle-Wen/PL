@@ -1,0 +1,18 @@
+Grammer: 
+<program> := 
+            | <statement> <function> <program>
+            | <function> <statement> <program>
+            | <statement>
+            | <function>
+            | e 
+
+Parser for <A>: 
+
+let rec parseA s: =
+    match s with 
+        | a :: _ -> 
+        | c :: _ -> 
+        | "(" :: _ -> 
+        | d -> 
+    let help x: 
+        

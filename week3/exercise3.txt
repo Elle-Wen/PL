@@ -1,0 +1,2 @@
+type command = Int of int | Plus | Minus | Times | Divide
+             | Dup | Drop | Over | Rot | Swap

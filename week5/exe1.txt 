@@ -1,0 +1,12 @@
+Which symbols occur free in the following expressions? Which ones occur bound?
+
+p a b        free: p a b 
+
+&b. p a b  free:p a bound: b a 
+
+&s. &x. s (s (s x))  free:  bound: s x 
+
+(&b. a b) (&a. a) free: bound: a b 
+
+(&p. &a. &b. p b a) (&a. &b. a) (&s. &x. x) (&s. &x. s (s (s (n s x)))) free:  bound: 
+

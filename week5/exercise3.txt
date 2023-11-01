@@ -1,0 +1,9 @@
+/\ 'a . & x : 'a . x
+
+the id function showed in class 
+has type: for all a :: * a -> a 
+
+/\ 'a. & s : 'a -> 'a . &z : 'a . s (s z)
+
+first apply TermAbs  ? 
+{} |- s :: *    {} U {(a, s)} |- e : t2

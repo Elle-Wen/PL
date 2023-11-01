@@ -1,0 +1,3 @@
+(library
+ (public_name using_menhir)
+ (name using_menhir))

@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "expression.cma"
+archive(native) = "expression.cmxa"
+plugin(byte) = "expression.cma"
+plugin(native) = "expression.cmxs"

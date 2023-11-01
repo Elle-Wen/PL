@@ -1,0 +1,20 @@
+defining interfaces: 
+module type STACK = sig
+  type 'a stack
+  val empty : 'a stack
+  val push : 'a stack -> 'a -> 'a stack
+  val pop : 'a stack -> ('a * 'a stack) option
+  val is_empty : 'a stack -> bool
+end
+
+for fifo: #same as STACK? 
+module type FIFO = sig 
+    type 'a stack 
+    val empty : 'a stack 
+    val push: 'a stack -> 'a -> 'a stack 
+    val pop : 
+
+for GROUP: 
+module type GROUP = sig 
+    type 'a values 
+    

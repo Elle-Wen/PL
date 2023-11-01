@@ -1,0 +1,9 @@
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Start test test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Test test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal is successful.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: End test test_suite for lambda calculus:1:test suite for alpha-equivalence:2:lambda unequal.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Start test test_suite for lambda calculus:2:test suite for parser:0:id.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Test test_suite for lambda calculus:2:test suite for parser:0:id is successful.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: End test test_suite for lambda calculus:2:test suite for parser:0:id.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Start test test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: Test test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda is successful.
+2023-10-05T21:54:54+00:00 Yuheng#05 I: End test test_suite for lambda calculus:2:test suite for parser:2:apply inside lambda.

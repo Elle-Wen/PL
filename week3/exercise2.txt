@@ -1,0 +1,4 @@
+<P> ::= e | ( <P> ) | <P> <P> ambiguious 
+fix: <P> ::= (P) P | e
+
+<S> ::= a <S> | a <S> b | a

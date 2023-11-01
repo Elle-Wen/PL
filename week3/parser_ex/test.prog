@@ -1,0 +1,16 @@
+int main() {
+  a = 2;
+  b = 7;
+  while (less_than(a, b)) {
+    a = a + 2;
+    b = b + 1;
+  }
+  return 0;
+}
+
+bool less_than(int i1, int i2) {
+  if (i1 < i2)
+    return true;
+  else
+    return false;
+}
