@@ -1,4 +1,4 @@
-(*open OUnit2
+open OUnit2
 open Lambda_calculus.Lexer
 open Lambda_calculus.Ast
 open Lambda_calculus.Reducer
@@ -123,4 +123,3 @@ let tests = "test_suite for lambda calculus" >::: [
   ]
 
 let _ = run_test_tt_main tests
-*)

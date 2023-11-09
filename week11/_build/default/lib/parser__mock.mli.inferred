@@ -1,0 +1,64 @@
+type token =
+    With
+  | Type
+  | True
+  | Times
+  | Then
+  | TUnit
+  | TString
+  | TInt
+  | TBool
+  | String of string
+  | Rec
+  | RParen
+  | Plus
+  | Pipe
+  | Or
+  | Of
+  | Not
+  | Negate
+  | Mod
+  | Minus
+  | Match
+  | Lt
+  | Let
+  | LParen
+  | Int of int
+  | In
+  | If
+  | Id of string
+  | Fun
+  | False
+  | Eq
+  | Else
+  | EOF
+  | DoubleSemicolon
+  | DoubleArrow
+  | Divide
+  | Concat
+  | Comma
+  | Colon
+  | Arrow
+  | And
+val menhir_begin_marker : int
+val xv_unop : Ast.unop
+val xv_typee : Ast.typee
+val xv_type_rule_geq_one : (string * Ast.typee option) list
+val xv_type_option : Ast.typee option
+val xv_start : Ast.program
+val xv_program : Ast.program
+val xv_pattern_vars : Ast.pattern_vars
+val xv_param_geq_one : Ast.param list
+val xv_param_any_number : Ast.param list
+val xv_param : Ast.param
+val xv_of_type_option : Ast.typee option
+val xv_match_branch_geq_one : Ast.match_branch list
+val xv_match_branch : Ast.match_branch
+val xv_id_geq_one : string list
+val xv_expr_geq_one : Ast.expr list
+val xv_expr : Ast.expr
+val xv_binop : Ast.binop
+val xv_binding : Ast.binding
+val xv_base_expr : Ast.expr
+val xv_app_expr : Ast.expr list
+val menhir_end_marker : int

@@ -1,5 +1,6 @@
 open OUnit2
 open Ocaml_lite.Lexer
+open Ocaml_lite.Parser 
 
 let lex_tests = "test suite for tokenize" >::: [
     "random code" >::

@@ -1,0 +1,47 @@
+a = 1;
+b = 1;
+sum = 0;
+while (b < 1000) {
+  t = a + b;
+  a = b;
+  b = t;
+  if (b % 2 == 0) {
+    print(b);
+  } else {
+    sum = sum + b;
+  }
+}
+print(sum);
+
+control flow graph: 
+
++------------+
+| B0: a = 1; |
+|     b = 1; |
+|    sum = 0 | 
++------------+
+      v
++------------+
+|B1: b < 1000|
++------------+
+    true v     <-|             false v 
++-------------+ --        +------------+
+| B3: t = a+b;|           |B2:print(sum)|
+|     a = b;  |            +------------+
+|     b = t   | 
++-------------+            
+          w       
+    +------------+
+    |B4: b%2 == 0|
+    +------------+                     
+    true w            false w    
++------------+  +---------------+
+|B5: print(b)|  |B6: sum = sum+b|
++------------+  +---------------+
+
+pseudocode: 
+assume the AST for while is While(expr), if is If(expr) 
+First read line after line. Stop when sees While(expr) or If(expr)
+Group the lines before it into the first block named B0. 
+
+                           

@@ -1,0 +1,24 @@
+&x. x
+yes. t0->t0 for type t0 
+
+&x. x + 1
+no? 
+
+&x.x+1 assign to t0. 
+x+1 assign to t1. 
+
+&x. 1 + (not x)
+no 
+
+&f. &x. &y. f y x
+
+let flip = &f. &x. &y. f y x in flip (&x. &y. x && (not y))
+
+let twice = &f. &x. f (f x) in twice (&x. x + 1) 0
+
+let twice = &f. &x. f (f x) in
+let x = twice (&x. x + 1) 0 in
+twice (&x. not x) false
+
+(&f. let x = f (&x. x + 1) 0 in f (&x. not x) false) (&f. &x. f (f x))
+
