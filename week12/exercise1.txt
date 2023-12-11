@@ -1,0 +1,7 @@
+data Finite : Nat -> Type where
+  FZ : Finite (S n)
+  FS : Finite n -> Finite (S n)
+  Idris code: 
+    index : (i : Finite n) -> Vec a n -> a
+    index FZ     (x :: xs) = x
+    index (FS i) (x :: xs) = index i xs

@@ -1,6 +1,6 @@
-let parse = fun _ -> failwith "parse is undefined"
-let typecheck = fun _ -> failwith "typecheck is undefined"
-let interpret = fun _-> failwith "interpret is undefined"
+let parse = Ocaml_lite.Lexer.parse
+let typecheck =  Ocaml_lite.Typechecker.tc_prog 
+let interpret =  Ocaml_lite.Interpreter.interpret_program 
 
 let () =
   if Array.length Sys.argv <> 2

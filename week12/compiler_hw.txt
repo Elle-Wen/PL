@@ -1,0 +1,161 @@
+original code: 
+i = 0;
+sum = 0;
+while (i < 1000) {
+  i = i + 1;
+  if (i % 3 == 0) {
+    sum = sum + i;
+    continue;
+  }
+  if (i % 5 == 0) {
+    sum = sum + i;
+  }
+}
+print(sum)
+
+LLVM: 
+
+L0:
+  %1 = 0 // i 
+  %2 = 0 // sum 
+  br label %L1
+
+L1:
+  %3 = phi i32 [ 0, %L0 ], [ %11, %L3 ], [%21, %L6] //i 
+  %4  = phi i32 [ 0, %L0 ], [ %13, %L3 ], [ %22, %L6 ] //sum 
+  %5 = icmp slt i32 %3, 1000 // if %3 is smaller than 1000, %5 = true, false otherwise
+  br i1 %5, label %L2, label %L7 
+
+L2:
+  %6 = %3 //i
+  %7 = %4  //sum 
+  %8 = add i32 %6, 1 // i = i + 1
+  %9 = mod i32 %8, 3 
+  %10 = icmp eq i32 %9, 0
+  br i1 %10, %L3, %L4 // if  
+
+L3:
+  %11 = %8 //i 
+  %12 = %7 //sum 
+  %13 = add i32 %11, %12 // new sum 
+  br label %L1
+
+
+L4:
+  %14 = %8 //i 
+  %15 = %7 //sum 
+  %16 = mod i32 %14, 5 
+  %17 = icmp eq i32 %16, 0
+  br i1 %17, %L5, %L6 // if  
+
+L5:
+  %18 = %14 //i 
+  %19 = %15 //sum 
+  %20 = add nsw i32 %18, %19 //new sum 
+  br label %L6 
+
+L6:
+  %21 = phi i32 [%14,%L4], [%18,%L5] //i 
+  %22 = phi i32 [%15,%L4], [%20,%L5] //sum 
+  br label %L1 
+
+L7:
+  %23 = %3
+  %24 = %4
+  %25 = call @print(i32 %24)
+
+Optimization: 
+
+1) jump to jump elimination 
+  * delete L6 
+  * change the last line of L4 to be the following: 
+  br i1 %17, %L5, %L1 // if  
+  * change the last line of L5 to be the following: 
+  br label %L1 
+  * change the first two lines of L1 to be the following: 
+  %3 = phi i32 [ 0, %L0 ], [ %11, %L3 ], [%14, %L4], [%18, %L5] //i 
+  %4  = phi i32 [ 0, %L0 ], [ %13, %L3 ], [ %15, %L4 ], [%19, %L5] //sum 
+
+2) Loop unrolling (unrolling two iterations is enough).
+
+L0: //initial sum and i 
+  %1 = 0 // i 
+  %2 = 0 // sum 
+  br label %L1
+
+L1: //while loop header 
+  %3 = phi i32 [ 0, %L0 ], [ %110, %L13 ], [ %210, %L16] //i 
+  %4  = phi i32 [ 0, %L0 ], [ %130, %L13 ], [ %220, %L16 ] //sum 
+  %5 = icmp slt i32 %3, 1000 // if %3 is smaller than 1000, %5 = true, false otherwise
+  br i1 %5, label %L2, label %L7 
+
+L2: //increment i, first if statement header 
+  %6 = %3 //i
+  %7 = %4  //sum 
+  %8 = add i32 %6, 1 // i = i + 1
+  %9 = mod i32 %8, 3 
+  %10 = icmp eq i32 %9, 0
+  br i1 %10, %L3, %L4 // if  
+
+L3: // true case first if statement, go to next unrolloed iteration 
+  %11 = %8 //i 
+  %12 = %7 //sum 
+  %13 = add i32 %11, %12 // new sum 
+  br label %L12
+
+
+L4: //false case for first if statement, second if statement header 
+  %14 = %8 //i 
+  %15 = %7 //sum 
+  %16 = mod i32 %14, 5 
+  %17 = icmp eq i32 %16, 0
+  br i1 %17, %L5, %L6 // if  
+
+L5: // true case for second if statement, go to empty block 
+  %18 = %14 //i 
+  %19 = %15 //sum 
+  %20 = add nsw i32 %18, %19 //new sum 
+  br label %L6 
+
+L6: // empty block 
+  %21 = phi i32 [%14,%L4], [%18,%L5] //i 
+  %22 = phi i32 [%15,%L4], [%20,%L5] //sum 
+  br label %L12 
+
+L12: // increment i for the second time 
+  %60 = %21 //i
+  %70 = %22  //sum 
+  %80 = add i32 %60, 1 // i = i + 1
+  %90 = mod i32 %80, 3 
+  %100 = icmp eq i32 %90, 0
+  br i1 %100, %L13, %L14 // if  
+
+L13:
+  %110 = %80 //i 
+  %120 = %70 //sum 
+  %130 = add i32 %110, %120 // new sum 
+  br label %L1
+
+
+L14: 
+  %140 = %80 //i 
+  %150 = %70 //sum 
+  %160 = mod i32 %140, 5 
+  %170 = icmp eq i32 %160, 0
+  br i1 %170, %L15, %L16 // if  
+
+L15:
+  %180 = %140 //i 
+  %190 = %150 //sum 
+  %200 = add nsw i32 %180, %190 //new sum 
+  br label %L16 
+
+L16:
+  %210 = phi i32 [%140,%L4], [%180,%L5] //i 
+  %220 = phi i32 [%150,%L4], [%200,%L5] //sum 
+  br label %L1 
+
+L7:
+  %230 = %3
+  %240 = %4
+  %250 = call @print(i32 %240)

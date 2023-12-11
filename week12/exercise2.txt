@@ -1,0 +1,19 @@
+((A => B) => A) => B
+
+type: ((A->B)->A)->B
+
+((A \/ _|_) => A) /\ (A => (A \/ _|_))
+
+type: (Either A _|_ , A -> Either A _|_)
+
+(A => B) => -B => -A
+
+type: (A->B)->(B->void)->(A->void)
+
+(A /\ B) => -(-A \/ -B)
+
+type: (A,B)->not (not A,not B)
+
+((A /\ B) \/ (-A /\ -B)) => (A => B) /\ (B => A)
+
+type: ((A,B), (not A,not B)) -> ((A->B),(B->A))

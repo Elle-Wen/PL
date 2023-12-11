@@ -73,8 +73,10 @@
 %type <expr list>expr_geq_one
 %type <match_branch list>match_branch_geq_one
 %type <string list>id_geq_one
-%type <expr list>app_expr
+%type <expr>app_expr
 %type <expr>base_expr
+%type <typee list>tuple_type
+%type <typee>base_type
 
 %% 
 start: 
@@ -83,8 +85,8 @@ program:
     | p = binding ; DoubleSemicolon ; { [p] }
     | p = program ; b = binding ; DoubleSemicolon ; { p @ [b] }
 binding: 
-    | Let ; var = Id ; pl = param_any_number ; t = type_option ; Eq ; ex = expr; {ValDef(var, pl, t, ex)}
-    | Let ; Rec ; var = Id ; pl = param_any_number ; t = type_option ; Eq ; ex = expr; {RecDef(var, pl, t, ex)}
+    | Let ; var = Id ; pl = param_any_number ; t = type_option ; Eq ; ex = expr; {LetDef(var, pl, t, ex)}
+    | Let ; Rec ; var = Id ; pl = param_any_number ; t = type_option ; Eq ; ex = expr; {LetRecDef(var, pl, t, ex)}
     | Type ; var = Id ; Eq ; tr = type_rule_geq_one; {TyDef(var, tr)}
 
 type_rule_geq_one: 
@@ -111,14 +113,14 @@ expr:
     | Let ; Rec ; var = Id ; p = param_any_number ; t = type_option ; Eq ; e1 = expr ; In ; e2 = expr ; {LetRecExpr(var, p, t, e1, e2)}
     | If ; e1 = expr ; Then ; e2 = expr ; Else ; e3 = expr ; {IfExpr(e1,e2,e3)}
     | Fun ; p = param_geq_one ; t = type_option ; DoubleArrow ; e = expr ; {FunExpr(p,t, e)}
-    | ae = app_expr; {ExprExpr(ae)}
-    | LParen ; e1 = expr ; eL = expr_geq_one ; RParen ; {CommaExpr(e1 :: eL)}
+    | ae = app_expr; {ae}
     | e1 = expr ; b = binop ; e2 = expr ; {ComputeExpr(e1,b,e2)}
     | u = unop ; e = expr ; {NotExpr(u,e)}
     | Match ; e1 = expr ; With ; mL = match_branch_geq_one ; {MatchExpr(e1,mL)} 
 app_expr: 
-    | e1 = app_expr ; e2 = base_expr ; {e1 @ [e2]}
-    | e1 = base_expr ; {[e1]}
+    | e1 = app_expr ; e2 = base_expr ; {ExprExpr (e1,e2)}
+    | e1 = base_expr ; {e1}
+
 base_expr:
     | LParen ; e = expr ; RParen ; {e}
     | i = Int ; {IntExpr i}
@@ -127,6 +129,9 @@ base_expr:
     | s = String ; {StrExpr s}
     | var = Id ; {VarExpr var}
     | LParen ; RParen ; {BracketExpr}
+    | LParen ; e1 = expr ; eL = expr_geq_one ; RParen ; {CommaExpr(e1 :: eL)}
+
+
 match_branch_geq_one: 
     | Pipe ; m = match_branch ; {[m]}
     | Pipe ; m = match_branch ; ml = match_branch_geq_one ; {m::ml}
@@ -157,15 +162,22 @@ unop:
     | Negate ; {NOp}    
 
 typee: 
-    | t1 = typee ; Arrow ; t2 = typee ; {ToType([t1;t2])}
+    | t1 = typee ; Arrow ; t2 = typee ; {ToType(t1,t2)}
+    | t = tuple_type ; {TimesType t}
+    | b = base_type ; {b}
+
+tuple_type:
+    | t = tuple_type ; Times ; b = base_type ; {t@[b]}
+    | b = base_type ; Times ; d = base_type {[b;d]}
+
+base_type: 
     | LParen ; t = typee ; RParen ; {t} 
-    | t1 = typee ; Times ; t2 = typee ; {TimesType(t1,[t2])} 
     | TInt ; {IntType}
     | TBool ; {BoolType}
     | TString ; {StringType}
     | TUnit ; {UnitType}
     | var = Id ; {VarType var}
-    
+
 match_branch: 
     | var = Id ; p = pattern_vars ; DoubleArrow ; e = expr ; {MatchBranch(var,Some p,e)}
     | var = Id ; DoubleArrow ; e = expr ; {MatchBranch(var,None,e)} 

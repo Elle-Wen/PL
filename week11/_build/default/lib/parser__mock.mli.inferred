@@ -45,6 +45,7 @@ val xv_unop : Ast.unop
 val xv_typee : Ast.typee
 val xv_type_rule_geq_one : (string * Ast.typee option) list
 val xv_type_option : Ast.typee option
+val xv_tuple_type : Ast.typee list
 val xv_start : Ast.program
 val xv_program : Ast.program
 val xv_pattern_vars : Ast.pattern_vars
@@ -59,6 +60,7 @@ val xv_expr_geq_one : Ast.expr list
 val xv_expr : Ast.expr
 val xv_binop : Ast.binop
 val xv_binding : Ast.binding
+val xv_base_type : Ast.typee
 val xv_base_expr : Ast.expr
-val xv_app_expr : Ast.expr list
+val xv_app_expr : Ast.expr
 val menhir_end_marker : int

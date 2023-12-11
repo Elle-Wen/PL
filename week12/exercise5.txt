@@ -1,0 +1,59 @@
+1:
+
+Input: (fun x => x) ()
+
+Return: t1
+
+Constraints:
+t0 -> t0 ~ unit -> t1
+
+t0 |-> unit 
+t0 |-> t1 
+t1 |-> unit 
+
+return: unit 
+
+2:
+
+Input: (fun x => x + 1) (fun y => 2)
+
+Returns: t2
+
+Constraints:
+t0 -> int ~ (t1 -> int) -> t2
+int -> int ~ int -> t0
+
+t0 |-> t1 -> int 
+t2 |-> int 
+
+fail 
+
+3:
+
+Context: type list = | Nil | Cons of int * list
+         sum : t0
+
+input:
+  fun x => match x with
+    | Nil => 0
+    | Cons (h, t) => h + sum t ;;
+
+Returns: t1 -> int
+
+Constraints:
+int ~ int
+t1 ~ list
+t1 ~ list
+list ~ t3
+int ~ t2
+int ~ t4
+int ~ t2
+t0 ~ t3 -> t4
+
+t1 |-> list 
+t3 |-> list 
+t2 |-> int 
+t4 |-> int 
+t0 |-> list -> int 
+
+returns: list -> int 

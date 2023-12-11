@@ -1,15 +1,16 @@
 (* AST type for ocaml lite *) 
 
 type typee = 
-  | ToType of typee list (*<type> ::= <type> -> <type>*)
+  | ToType of typee * typee (*<type> ::= <type> -> <type>*)
   (*| ( <type> )*)
-  | TimesType of typee * typee list (*| <type> * <type> be careful!! distinguish int * int * int vs. (int * int)* int vs. int * (int * int) *)
+  | TimesType of typee list (*| <type> * <type> be careful!! distinguish int * int * int vs. (int * int)* int vs. int * (int * int) *)
   | IntType (*$int*)
   | BoolType (*$bool*)
   | StringType (*$string*)
   | UnitType (*$unit*)
   | VarType of string (*$id*)
-
+  | FreshType of string 
+  | ForAllType of string * typee
 type param = 
   | TyParam of string * typee (*<param> ::= $id [: <type>]*) 
   | UTyParam of string (*<param> ::= $id*)
@@ -39,7 +40,7 @@ type expr =
   | LetRecExpr of string * param list * typee option * expr * expr (*| let rec $id [<param>]* [: <type>] = <expr> in <expr>*)
   | IfExpr of expr * expr * expr (*| if <expr> then <expr> else <expr>*)
   | FunExpr of param list * typee option * expr (*| fun [<param>]+ [: <type>] => <expr>*)
-  | ExprExpr of expr list (*| <expr> <expr>*)
+  | ExprExpr of expr * expr (*| <expr> <expr> *) (*????? expr list*)
   | CommaExpr of expr list (*| ( <expr> [, <expr>]+ )*)
   | ComputeExpr of expr * binop * expr (*| <expr> <binop> <expr>*)
   | NotExpr of unop * expr (*| <unop> <expr>*)
@@ -57,8 +58,8 @@ and match_branch =
 
 type binding = 
   | TyDef of string * (string * typee option ) list (* | type $id = ['|' $id [of <type>]]+*)
-  | ValDef of string * param list * typee option * expr (*<binding> ::= let $id [<param>]* [: <type>] = <expr>*)
-  | RecDef of string * param list * typee option * expr (*| let rec $id [<param>]* [: <type>] = <expr>*)
-
+  | LetDef of string * param list * typee option * expr (*<binding> ::= let $id [<param>]* [: <type>] = <expr>*)
+  | LetRecDef of string * param list * typee option * expr (*| let rec $id [<param>]* [: <type>] = <expr>*)
+  
 type program = 
   binding list  (*<program> ::= [<binding> ;;]+*)
